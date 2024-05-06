@@ -1,0 +1,57 @@
+<main class="flex items-center justify-center">
+  <!-- <div style="width: 500px; height: 500px; background-color: aqua;" class="flex flex-col">
+    <div style="width: 150px; height: 150px; background-color: blue;" class="border-4 border-black">Meeting</div>
+    <div style="width: 150px; height: 150px; background-color: blue;" class="border-4 border-black">Meeting</div>
+    <div style="background-color: green;" class="grow"></div>
+    <div style="height: 150px; background-color: pink;" class="flex flex-row-reverse">
+      <div style="width: 150px; height: 150px; background-color: blue;" class="border-4 border-black">Labo</div>
+    </div>
+  </div> -->
+
+  <!-- <div style="background-color: aqua;" class="grid grid-cols-5 grid-rows-5 gap-0">
+    <div [ngStyle]="{'background-color': meetingRooms()}" style="width: 100px; height: 100px;" class="col-start-1 row-start-1">Meeting</div>
+    <div [ngStyle]="{'background-color': meetingRooms()}" style="width: 100px; height: 100px;" class="col-start-1 row-start-2">Meeting</div>
+    <div [ngStyle]="{'background-color': meetingRooms()}" style="width: 100px; height: 100px;" class="col-start-1 row-start-3">Meeting</div>
+    <div [ngStyle]="{'background-color': meetingRooms()}" style="width: 100px; height: 100px;" class="col-start-1 row-start-4">Meeting</div>
+    <div [ngStyle]="{'background-color': meetingRooms()}" style="width: 100px; height: 100px;" class="col-start-1 row-start-5">Meeting</div>
+
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"  style="width: 100px; height: 100px;" class="col-start-2 row-start-1">Meeting</div>
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"  style="width: 100px; height: 100px;" class="col-start-2 row-start-2">Meeting</div>
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"  style="width: 100px; height: 100px;" class="col-start-2 row-start-3">Meeting</div>
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"  style="width: 100px; height: 100px;" class="col-start-2 row-start-4">Meeting</div>
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"  style="width: 100px; height: 100px;" class="col-start-2 row-start-5">Meeting</div>
+    
+    <div [ngStyle]="{'background-color': waitingRooms()}"  style="width: 100px; height: 100px;" class="col-start-3 row-start-1">Meeting</div>
+    <div [ngStyle]="{'background-color': waitingRooms()}"  style="width: 100px; height: 100px;" class="col-start-3 row-start-2">Meeting</div>
+    <div [ngStyle]="{'background-color': waitingRooms()}"  style="width: 100px; height: 100px;" class="col-start-3 row-start-3">Meeting</div>
+    <div [ngStyle]="{'background-color': waitingRooms()}"  style="width: 100px; height: 100px;" class="col-start-3 row-start-4">Meeting</div>
+    <div [ngStyle]="{'background-color': waitingRooms()}"  style="width: 100px; height: 100px;" class="col-start-3 row-start-5">Meeting</div>
+
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"  style="width: 100px; height: 100px;" class="col-start-4 row-start-1">Meeting</div>
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"  style="width: 100px; height: 100px;" class="col-start-4 row-start-2">Meeting</div>
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"  style="width: 100px; height: 100px;" class="col-start-4 row-start-3">Meeting</div>
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"  style="width: 100px; height: 100px;" class="col-start-4 row-start-4">Meeting</div>
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"  style="width: 100px; height: 100px;" class="col-start-4 row-start-5">Meeting</div>
+
+    <div [ngStyle]="{'background-color': meetingRooms()}"  style="width: 100px; height: 100px;" class="col-start-5 row-start-1">Meeting</div>
+    <div [ngStyle]="{'background-color': meetingRooms()}"  style="width: 100px; height: 100px;" class="col-start-5 row-start-2">Meeting</div>
+    <div [ngStyle]="{'background-color': meetingRooms()}"  style="width: 100px; height: 100px;" class="col-start-5 row-start-3">Meeting</div>
+    <div [ngStyle]="{'background-color': meetingRooms()}"  style="width: 100px; height: 100px;" class="col-start-5 row-start-4">Meeting</div>
+    <div [ngStyle]="{'background-color': meetingRooms()}"  style="width: 100px; height: 100px;" class="col-start-5 row-start-5">Meeting</div>
+  </div> -->
+
+  <div style="background-color: aqua;" class="grid grid-cols-[200px,200px,200px,200px,200px,200px] grid-rows-[200px,200px,200px,200px,200px] gap-0">
+    <div [ngStyle]="{'background-color': meetingRooms()}"class="col-start-1 col-span-2 row-start-1 row-span-2">Meeting Room</div>
+
+    <div [ngStyle]="{'background-color': meetingRooms()}"class="col-start-1 col-span-2 row-start-3 row-span-2">Meeting Room</div>
+
+    <div [ngStyle]="{'background-color': laboRooms()}"class="col-start-6 row-start-4 row-span-2">Labo Room</div>
+
+    <div [ngStyle]="{'background-color': waitingRooms()}"class="col-start-3 col-span-3 row-start-1 row-span-3">Waiting Room</div>
+
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"class="col-start-1 col-span-5 row-start-4 row-span-2">Open Space</div>
+    <div [ngStyle]="{'background-color': openSpaceRooms()}"class="col-start-5 col-span-2 row-start-1 row-span-3">Open Space</div>
+  </div>
+
+  <router-outlet />
+</main>
