@@ -9,34 +9,23 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit {
-  title = 'test-position';
+export class AppComponent {
+  items = [
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: true, svgURL: 'assets/empty-rectangle.svg' },
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: false, svgURL: 'assets/rectangle-example.svg' },
+    { isEmpty: true, svgURL: 'assets/empty-rectangle.svg' },
+  ];
 
-  meetingRooms = signal('green');
-  openSpaceRooms = signal('green');
-  waitingRooms = signal('green');
-  laboRooms = signal('green');
-
-  ngOnInit(): void {
-    setInterval(() => {
-      this.meetingRooms.set(this.chooseColor(Math.floor(Math.random() * 3) + 1));
-      this.openSpaceRooms.set(this.chooseColor(Math.floor(Math.random() * 3) + 1));
-      this.waitingRooms.set(this.chooseColor(Math.floor(Math.random() * 3) + 1));
-      this.laboRooms.set(this.chooseColor(Math.floor(Math.random() * 3) + 1));
-    }, 5000);
-  }
-
-  chooseColor(randomNumber: number): string {
-    switch (randomNumber) {
-      case 1:
-        return 'green';
-      case 2:
-        return 'yellow';
-      case 3:
-        return 'red';
-
-      default:
-        return 'green';
-    }
-  }
+  triangleURL = 'assets/triangle.svg';
 }
